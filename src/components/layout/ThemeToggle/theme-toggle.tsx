@@ -21,8 +21,8 @@ export function ModeToggle() {
 
       // Set coordinates from the click event
       if (e) {
-        root.style.setProperty('--x', `${e.clientX}px`);
-        root.style.setProperty('--y', `${e.clientY}px`);
+        root.style.setProperty('--x', `23px`);
+        root.style.setProperty('-z', `0px`);
       }
 
       document.startViewTransition(() => {
