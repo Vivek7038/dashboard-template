@@ -57,6 +57,14 @@ export const navItems: NavItem[] = [
     shortcut: ['k', 'k'],
     isActive: false,
     items: [] // No child items
+  },
+  {
+    title: 'User Roles',
+    url: '/dashboard/roles',
+    icon: 'roles',
+    shortcut: ['r', 'r'],
+    isActive: false,
+    items: [] // No child items
   }
 ];
 
