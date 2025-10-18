@@ -1,5 +1,9 @@
-import { redirect } from 'next/navigation';
+import { PricingSection } from '@/components/pricing/PricingSection';
 
-export default async function Page() {
-  redirect('/dashboard/overview');
+export default function Page() {
+  return (
+    <main className='bg-background min-h-screen'>
+      <PricingSection />
+    </main>
+  );
 }
