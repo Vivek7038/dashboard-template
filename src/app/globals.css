@@ -75,6 +75,20 @@
   --sidebar-ring: oklch(0.439 0 0);
 }
 
+/* Landing page custom colors */
+:root {
+  --landing-primary-text: #0a0a0b;
+  --landing-secondary-text: #5a656f;
+  --landing-muted-text: #7b8994;
+  --landing-dark-text: #2b3035;
+  --landing-light-text: #697783;
+  --landing-bg-dark: #0a0a0b;
+  --landing-slack: #e01e5a;
+  --landing-google: #e37400;
+  --landing-hubspot: #fe5c35;
+  --landing-border: #e1e4e7;
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -111,6 +125,16 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-landing-primary-text: var(--landing-primary-text);
+  --color-landing-secondary-text: var(--landing-secondary-text);
+  --color-landing-muted-text: var(--landing-muted-text);
+  --color-landing-dark-text: var(--landing-dark-text);
+  --color-landing-light-text: var(--landing-light-text);
+  --color-landing-bg-dark: var(--landing-bg-dark);
+  --color-landing-slack: var(--landing-slack);
+  --color-landing-google: var(--landing-google);
+  --color-landing-hubspot: var(--landing-hubspot);
+  --color-landing-border: var(--landing-border);
 }
 
 @layer base {
@@ -120,6 +144,76 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Landing page typography utilities */
+@utility landing-hero-title {
+  font-family: Inter, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--landing-primary-text);
+}
+
+@utility landing-section-title {
+  font-family: Inter, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--landing-primary-text);
+}
+
+@utility landing-subtitle {
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.48;
+  color: var(--landing-secondary-text);
+}
+
+@utility landing-badge-text {
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--landing-primary-text);
+}
+
+@utility landing-card-title {
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--landing-dark-text);
+}
+
+@utility landing-card-label {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--landing-muted-text);
+}
+
+@utility landing-card-description {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.48;
+  color: var(--landing-muted-text);
+}
+
+@utility landing-feature-title {
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--landing-primary-text);
+}
+
+@utility landing-feature-description {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.48;
+  color: var(--landing-secondary-text);
 }
 
 /* View Transition Wave Effect */
